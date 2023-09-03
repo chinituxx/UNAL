@@ -1,0 +1,42 @@
+Lunes = 0
+Martes = 1   
+Miércoles = 2
+Jueves = 3
+Viernes = 4
+Sábado = 5
+Domingo = 6
+
+dia = str(input())
+if dia in locals():
+    dia = locals().get(dia)
+
+num = int(input())
+
+
+
+diaa = dia + num
+
+diact = diaa % 7
+
+if diact == 0:
+    print("Lunes")
+    
+elif diact == 1:
+    print("Martes")
+    
+elif diact == 2:
+    print("Miércoles")
+    
+elif diact == 3:
+    print("Jueves")
+    
+elif diact == 4:
+    print("Viernes")
+    
+elif diact == 5:
+    print("Sábado")
+    
+elif diact == 6:
+    print("Domingo")
+
+
